@@ -1,0 +1,535 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    background: url('../img/bg.png') repeat-x;
+    font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+    background-size: cover;
+    z-index: 999;
+    position: relative;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+area{
+    outline: none;
+}
+
+#header{
+    margin-top: 20px;
+    height: 143px;
+    position: relative;
+    background: url('../img/bg-header.png') no-repeat;
+    z-index: 100;
+}
+
+#logo{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    z-index: 50;
+}
+
+#logo-img{
+    margin-top: 5px;
+}
+
+#logo-text{
+    margin-bottom: 25px;
+}
+
+#menu > li{
+    float: left;
+}
+
+#menu > li{
+    font-size: 30px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-left: 42px;
+    text-shadow: 0px 2px 10px rgba(150, 150, 150, 1);
+    -webkit-box-reflect: below -5px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.5)));
+}
+
+#menu > li > a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#menu > li > a:hover{
+    color: #E2E1E1;
+}
+
+#cart{
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    position: relative;
+    z-index: 60;
+}
+
+#cart-img{
+    outline: none;
+}
+
+.center{
+    width: 903px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+.content{
+    margin-top: 40px;
+    width: 903px;
+    height: 524px;
+}
+
+#container{
+    background: url('../img/bg-content.png') no-repeat;
+    position: absolute;
+    
+}
+
+.row-1{
+    width: 296px;
+    height: 259px;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.row-2{
+    width: 296px;
+    height: 259px;
+    border-right: 5px solid black;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.last-product{
+    width: 296px;
+    height: 259px;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.product-text{
+    display: block;
+    font-size: 22px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    line-height: 50px;
+    color: #FFFFFF;
+}
+
+#container a{
+    text-decoration: none;
+}
+
+.img-product{
+    margin-top: 40px;
+    height: 160px;
+    max-width: 296px;
+    opacity: 0.92;
+}
+
+.img-product:hover{
+    opacity: 1;
+}
+
+#discount{
+    position: absolute;
+    left: 15px; 
+    top: 15px;
+    font-size: 38px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    color: #d66f26;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#logout > a{
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    margin-left: 50px;
+    text-shadow: none;
+}
+
+#client-area{
+    position: absolute;
+    top: 20px;
+    right: 245px;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+}
+
+#client-area > a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/*link temporario para iniciar sessao*/
+.linktemp {
+    color: #fff;
+    position: relative;
+    text-align: center;
+    display: block;
+    top: 100px;
+}
+
+#container-individual{
+    background: url('../img/fundoindividual.png') no-repeat;
+}
+
+#log{
+    
+   text-align: center;
+   font-size: 30px;
+   color: #fff;
+   -webkit-box-reflect: below -5px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.5)));
+  text-shadow: 0px 2px 10px rgba(150, 150, 150, 1);
+  margin-top: 200px;
+    
+    
+}
+
+#log1{
+    
+   text-align: center;
+   font-size: 20px;
+   color: #fff;
+   -webkit-box-reflect: below -5px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.5)));
+  text-shadow: 0px 2px 10px rgba(150, 150, 150, 1);
+  margin-top: 100px;
+    
+    
+}
+
+.individual{
+    margin-top: 0px;
+}
+
+.produto-imagem {
+    float: left;
+    height: 370px;
+    width: 530px;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.img-product-individual {
+    height: auto;
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.produto-info {
+    float: left;
+    height: 370px;
+    width: 370px;
+}
+.clear{
+    float: none;
+    clear: both;
+    height: 0;
+}
+.produto-nome-preco {
+    box-sizing: border-box;
+    height: 240px;
+    padding: 15px;
+}
+.produto-adicionar {
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.produto-nome-text {
+    color: #ffffff;
+    display: block;
+    font-size: 30px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    line-height: 50px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.produto-price {
+    color: #ef590f;
+    display: block;
+    font-size: 80px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    line-height: 50px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.produto-nome-text-cart {
+    color: #ffffff;
+    font-size:20px;
+    float: left;
+    width:30%;
+    box-sizing: border-box;
+
+}
+
+.produto-price-cart {
+    color: #ef590f;
+    font-size: 20px;
+    float: left;
+    width:10%;
+    box-sizing: border-box;
+}
+
+.produto-eliminar-cart {
+    float: left;
+    width:20%;
+    box-sizing: border-box;
+}
+.prod-cart{
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+
+.product-desc {
+    color: #fff;
+    display: block;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 50px;
+    margin-top: 10px;
+}
+
+.produto-descricao {
+    padding: 15px;
+}
+
+.financas{
+
+  color: #fff; 
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 30px 0 ;
+  border-left: 70px;
+  margin-top: 20px;
+  font-size: small;
+ 
+  
+  
+  
+  
+
+}
+
+topcontent {
+    background-color: #666666;
+    height: 46px;
+    line-height: 46px;
+    font-size: 21px;
+    color : #000000;
+    padding-left: 12px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+#criarprod {
+      color: #fff; 
+  text-align: left;
+  border-collapse: separate;
+  border-spacing: 50px 0 ;
+  padding: 30px;
+  
+}
+
+.criarprod1 {
+      color: #fff; 
+  text-align: right;
+  border-collapse: separate;
+  border-spacing: 50px 0 ;
+  padding: 30px;
+  
+}
+
+.botao1{
+     border-spacing: 50px 0 ;
+     border-left: 40px;
+}
+
+.financas1{
+
+  color: #fff; 
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 20px 0 ;
+  border-left: 70px;
+  margin-top: 20px;
+  font-size: small;
+
+  
+ 
+   
+ 
+  
+  
+
+}
+
+
+
+.Titulos{
+    color: white;
+    padding-left: 30px;
+    padding-top: 30px;
+    
+}
+
+.titulo{
+    color: white;
+    padding-left: 30px;
+    padding-top: 30px;
+    
+}
+    
+
+#button{
+    color: rgb(0, 0, 0);
+font-size: 17px;
+padding: 6px;
+text-shadow: 0px 1px 0px rgba(30, 30, 30, 0);
+-webkit-border-radius: 18.64864864864865px;
+-moz-border-radius: 18.64864864864865px;
+border-radius: 18.64864864864865px;
+background: rgb(210, 67, 5);
+background: -moz-linear-gradient(90deg, rgb(210, 67, 5) 30%, rgb(250, 124, 41) 70%);
+background: -webkit-linear-gradient(90deg, rgb(210, 67, 5) 30%, rgb(250, 124, 41) 70%);
+background: -o-linear-gradient(90deg, rgb(210, 67, 5) 30%, rgb(250, 124, 41) 70%);
+background: -ms-linear-gradient(90deg, rgb(210, 67, 5) 30%, rgb(250, 124, 41) 70%);
+background: linear-gradient(0deg, rgb(210, 67, 5) 30%, rgb(250, 124, 41) 70%);
+-webkit-box-shadow: 0px -1px 0px rgba(50, 50, 50, 0.31);
+-moz-box-shadow:    0px -1px 0px rgba(50, 50, 50, 0.31);
+box-shadow:         0px -1px 0px rgba(50, 50, 50, 0.31);
+
+
+}
+
+#button1{
+   color: rgb(0, 0, 0);
+font-size: 12px;
+padding: 6px;
+text-shadow: 0px 1px 0px rgba(30, 30, 30, 0);
+-webkit-border-radius: 18.64864864864865px;
+-moz-border-radius: 18.64864864864865px;
+border-radius: 18.64864864864865px;
+background: rgb(210, 67, 5);
+background: -moz-linear-gradient(90deg, rgb(210, 67, 5) 30%, rgb(250, 124, 41) 70%);
+background: -webkit-linear-gradient(90deg, rgb(210, 67, 5) 30%, rgb(250, 124, 41) 70%);
+background: -o-linear-gradient(90deg, rgb(210, 67, 5) 30%, rgb(250, 124, 41) 70%);
+background: -ms-linear-gradient(90deg, rgb(210, 67, 5) 30%, rgb(250, 124, 41) 70%);
+background: linear-gradient(0deg, rgb(210, 67, 5) 30%, rgb(250, 124, 41) 70%);
+-webkit-box-shadow: 0px -1px 0px rgba(50, 50, 50, 0.31);
+-moz-box-shadow:    0px -1px 0px rgba(50, 50, 50, 0.31);
+box-shadow:         0px -1px 0px rgba(50, 50, 50, 0.31);
+}
+
+
+.welcome{
+   color: white;
+}
+
+
+#button3{
+   color: rgb(0, 0, 0);
+font-size: 12px;
+padding: 6px;
+text-shadow: 0px 1px 0px rgba(30, 30, 30, 0);
+-webkit-border-radius: 18.64864864864865px;
+-moz-border-radius: 18.64864864864865px;
+border-radius: 18.64864864864865px;
+background: rgb(210, 67, 5);
+background: -moz-linear-gradient(90deg, rgb(210, 67, 5) 30%, rgb(250, 124, 41) 70%);
+background: -webkit-linear-gradient(90deg, rgb(210, 67, 5) 30%, rgb(250, 124, 41) 70%);
+background: -o-linear-gradient(90deg, rgb(210, 67, 5) 30%, rgb(250, 124, 41) 70%);
+background: -ms-linear-gradient(90deg, rgb(210, 67, 5) 30%, rgb(250, 124, 41) 70%);
+background: linear-gradient(0deg, rgb(210, 67, 5) 30%, rgb(250, 124, 41) 70%);
+-webkit-box-shadow: 0px -1px 0px rgba(50, 50, 50, 0.31);
+-moz-box-shadow:    0px -1px 0px rgba(50, 50, 50, 0.31);
+box-shadow:         0px -1px 0px rgba(50, 50, 50, 0.31);
+float:  left;
+}
+
+
+.info{
+    
+    color: white;
+}
